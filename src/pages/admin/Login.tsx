@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Lock, User, LogIn } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
-import { api } from '@/lib/api';
+import { Button } from '@/components/ui/button.tsx';
+import { Input } from '@/components/ui/input.tsx';
+import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card.tsx';
+import { api } from '@/lib/api.ts';
 import { toast } from 'sonner';
 
 export default function Login() {

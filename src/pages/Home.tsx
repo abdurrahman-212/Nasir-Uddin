@@ -1,9 +1,9 @@
 import { motion } from 'motion/react';
 import { ArrowRight, BookOpen, Camera, Video, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button.tsx';
 import { useEffect, useState } from 'react';
-import { api } from '@/lib/api';
+import { api } from '@/lib/api.ts';
 
 export default function Home() {
   const [recentBlogs, setRecentBlogs] = useState<any[]>([]);

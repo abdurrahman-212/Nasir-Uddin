@@ -6,15 +6,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import { useEffect, useState } from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Blogs from './pages/Blogs';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
-import AdminLogin from './pages/admin/Login';
-import AdminDashboard from './pages/admin/Dashboard';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
+import Home from './pages/Home.tsx';
+import About from './pages/About.tsx';
+import Blogs from './pages/Blogs.tsx';
+import Gallery from './pages/Gallery.tsx';
+import Contact from './pages/Contact.tsx';
+import AdminLogin from './pages/admin/Login.tsx';
+import AdminDashboard from './pages/admin/Dashboard.tsx';
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Video, Image as ImageIcon, Facebook, Youtube, ExternalLink, Calendar } from 'lucide-react';
-import { api } from '@/lib/api';
+import { api } from '@/lib/api.ts';
 import { format } from 'date-fns';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge.tsx';
+import { Button } from '@/components/ui/button.tsx';
 
 export default function Blogs() {
   const [blogs, setBlogs] = useState<any[]>([]);

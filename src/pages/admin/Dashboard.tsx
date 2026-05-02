@@ -6,17 +6,17 @@ import {
   Facebook as FacebookIcon, CheckCircle2 
 } from 'lucide-react';
 import { motion } from 'motion/react';
-import { api } from '@/lib/api';
+import { api } from '@/lib/api.ts';
 import { toast } from 'sonner';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from '@/components/ui/dialog';
-import { Badge } from '@/components/ui/badge';
-import { Separator } from '@/components/ui/separator';
+import { Button } from '@/components/ui/button.tsx';
+import { Input } from '@/components/ui/input.tsx';
+import { Textarea } from '@/components/ui/textarea.tsx';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs.tsx';
+import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card.tsx';
+import { ScrollArea } from '@/components/ui/scroll-area.tsx';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from '@/components/ui/dialog.tsx';
+import { Badge } from '@/components/ui/badge.tsx';
+import { Separator } from '@/components/ui/separator.tsx';
 
 export default function AdminDashboard() {
   const [blogs, setBlogs] = useState<any[]>([]);

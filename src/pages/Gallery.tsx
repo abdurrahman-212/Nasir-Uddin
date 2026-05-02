@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Image as ImageIcon, Maximize2, X } from 'lucide-react';
-import { api } from '@/lib/api';
+import { api } from '@/lib/api.ts';
 
 export default function Gallery() {
   const [items, setItems] = useState<any[]>([]);
