@@ -1,4 +1,5 @@
-import { Facebook, Youtube, Twitter, Instagram, Mail } from 'lucide-react';
+import { Facebook, Youtube, Twitter, Instagram, Mail, Lock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -17,10 +18,16 @@ export default function Footer() {
           <div>
             <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400 mb-6">Directory</h4>
             <ul className="space-y-3 text-xs font-semibold uppercase tracking-widest text-stone-600 dark:text-stone-400">
-              <li><a href="/" className="hover:text-primary transition-colors">Home</a></li>
-              <li><a href="/about" className="hover:text-primary transition-colors">Biography</a></li>
-              <li><a href="/blogs" className="hover:text-primary transition-colors">Lectures</a></li>
-              <li><a href="/gallery" className="hover:text-primary transition-colors">Gallery</a></li>
+              <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-primary transition-colors">Biography</Link></li>
+              <li><Link to="/blogs" className="hover:text-primary transition-colors">Lectures</Link></li>
+              <li><Link to="/gallery" className="hover:text-primary transition-colors">Gallery</Link></li>
+              <li className="pt-2">
+                <Link to="/admin/login" className="flex items-center gap-2 group text-stone-400 hover:text-primary transition-colors">
+                  <Lock className="w-3 h-3 group-hover:scale-110 transition-transform" />
+                  <span>Admin Login</span>
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
